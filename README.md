@@ -1,6 +1,6 @@
-# Babel frontend
+# Babble frontend
 
-The Astro frontend for [Babel Protocol](https://github.com/saint0x/babel-protocol), with the matching TypeScript SDK and protocol fixtures included so a fresh checkout can build and run its client tests independently.
+The Astro frontend for [Babble Protocol](https://github.com/saint0x/babel-protocol), with the matching TypeScript SDK and protocol fixtures included so a fresh checkout can build and run its client tests independently.
 
 This repository preserves the protocol workspace's relative paths:
 
@@ -22,10 +22,10 @@ npm run dev
 
 The root install step runs `npm ci` in `frontend/`. Building compiles the included SDK before Astro, so development can resolve the SDK from a fresh checkout. The development server binds to `127.0.0.1` and uses port 4321 by default.
 
-The UI connects to `http://127.0.0.1:8787` by default. Run the Babel API from the protocol repository, or provide another API URL when starting development:
+The UI connects to `http://127.0.0.1:8787` by default. Run the Babble API from the protocol repository, or provide another API URL when starting development:
 
 ```sh
-PUBLIC_BABEL_API_URL=https://your-babel-node.example npm run dev
+PUBLIC_BABBLE_API_URL=https://your-babble-node.example npm run dev
 ```
 
 The backend must permit requests from the frontend origin. This repository does not start or deploy the backend.
@@ -35,13 +35,13 @@ The backend must permit requests from the frontend origin. This repository does 
 ```sh
 npm run check
 npm test
-PUBLIC_BABEL_API_URL=https://your-babel-node.example npm run build
+PUBLIC_BABBLE_API_URL=https://your-babble-node.example npm run build
 npm run preview
 ```
 
 `check` verifies that generated SDK types match the included schema bundle, builds the SDK, and runs Astro's type checks. `test` performs that check and runs both the SDK and frontend test suites. `build` verifies the generated types, builds the SDK, and creates the static site in `frontend/dist/`. `preview` serves that production build locally.
 
-`PUBLIC_BABEL_API_URL` is embedded in the generated HTML at build time. Set it for the intended backend before producing deployment output. Changing it only when starting `preview` will not change a previously built site.
+`PUBLIC_BABBLE_API_URL` is embedded in the generated HTML at build time. Set it for the intended backend before producing deployment output. Changing it only when starting `preview` will not change a previously built site.
 
 To pass a server option through the root scripts:
 
