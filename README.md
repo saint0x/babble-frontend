@@ -1,6 +1,6 @@
 # Babble frontend
 
-The Astro frontend for [Babble Protocol](https://github.com/saint0x/babble-protocol), with the matching TypeScript SDK and protocol fixtures included so a fresh checkout can build and run its client tests independently.
+The Astro frontend for [Babble protocol](https://github.com/saint0x/babble-protocol), with the matching TypeScript SDK and protocol fixtures included so a fresh checkout can build and run its client tests independently.
 
 This repository preserves the protocol workspace's relative paths:
 
