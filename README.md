@@ -1,6 +1,6 @@
 # Babble frontend
 
-The Astro frontend for [Babble Protocol](https://github.com/saint0x/babel-protocol), with the matching TypeScript SDK and protocol fixtures included so a fresh checkout can build and run its client tests independently.
+The Astro frontend for [Babble Protocol](https://github.com/saint0x/babble-protocol), with the matching TypeScript SDK and protocol fixtures included so a fresh checkout can build and run its client tests independently.
 
 This repository preserves the protocol workspace's relative paths:
 
@@ -50,4 +50,4 @@ npm run dev -- --port 4322
 npm run preview -- --port 4322
 ```
 
-Full system acceptance—including the Rust backend, isolated stores, Aegis browser flows, and Fozzy trace verification—lives in the [protocol repository's test harness](https://github.com/saint0x/babel-protocol/tree/main/tests). Those integrated runs require the complete protocol checkout. A successful frontend build or unit test run does not establish full system production readiness; see the [production-readiness ledger](https://github.com/saint0x/babel-protocol/blob/main/docs/production-readiness.md) for current evidence and remaining work.
+Full system acceptance—including the Rust backend, isolated stores, Aegis browser flows, and Fozzy trace verification—lives in the [protocol repository's test harness](https://github.com/saint0x/babble-protocol/tree/main/tests). Those integrated runs require the complete protocol checkout. A successful frontend build or unit test run does not establish full system production readiness; see the [production-readiness ledger](https://github.com/saint0x/babble-protocol/blob/main/docs/production-readiness.md) for current evidence and remaining work.
